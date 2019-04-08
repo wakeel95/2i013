@@ -50,13 +50,35 @@ class Attaque(Strategy):
         
 
 
+class Defense(Strategy):
+    def __init__(self):
+        Strategy.__init__(self, "Random")
+
+    def compute_strategy(self, state, id_team, id_player):
+      
+        s = Strategies(state, id_team, id_player)
+        v = SuperState(state, id_team, id_player)
+        a = Actions(state, id_team, id_player)
+        
+        if v.player.distance(v.ball) < PLAYER_RADIUS + BALL_RADIUS:
+            return a.tircoequippier
+        else :
+            if v.ballecampadverse == 0:
+                if id_team == 1 :
+                    return a.deplacement(Vector2D((GAME_WIDTH/2)-5, v.ball.y))
+                else :
+                    return a.deplacement(Vector2D((GAME_WIDTH/2)+5, v.ball.y))
+            else :
+                return a.deplacement(v.ball)
+       
+
 # Create teams
 team1 = SoccerTeam(name="Team 1")
 team2 = SoccerTeam(name="Team 2")
 
 # Add players
 team1.add("Player 1", Attaque())  # Random strategy
-team2.add("Player 2", Attaque())   # Random strategy
+team2.add("Player 2", Defense())   # Random strategy
 
 # Create a match
 simu = VolleySimulation(team1, team2)

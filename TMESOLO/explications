@@ -1,0 +1,32 @@
+Wakeel MOHAMMAD 3704116
+
+
+Q 1.2
+
+Ma stratégie est :
+	-Si j'ai la balle et que je suis dans mon premier quart de terrain (éloigner du filet) je me rapproche du millieu:
+		- Si le joueur adverse est dans la partie haute du terrain je tire dans le coin opposé en bas.
+		- Si le joueur adverse est dans la partie basse je tire dasn le coin opposé supérieur.
+ 	Si je n'ai pas la balle :
+		- Si la balle est dans mon camps je vais la chercher.
+		- Si la balle est dans le camps en face : 
+			- Je me positionne au milieu de mon camps.
+	
+
+Q 1.3 
+Ma stratégie de défense est :
+	Si la balle est dans mon camps je renvoie la balle à mon coéquipier qui est attaquant.
+	Si la balle est dans le camps opposé alors je me mets au même niveau Y de la balle dans mon camps et j'attend que le joueurs adverse tire pour l'intercepté.
+
+
+Q 1.4
+
+Pour la stratégie 1 VS 1, je fais un mélange de la stratégies attaque et défense. Le joueur ce prépare a recevoir la balle lorsque la balle est dans le camps adverse et lorqu'il a la balle il tire comme l'aataquant.
+
+Q 1.5 
+
+Pour la stratégie 2 VS 2:
+	J'ai mis un attaquant et un defenseur.
+	Le defenseur recupere la balle si elle est dans son périmetre et proche du filet et il fait la passe à son coéquipier sur une position de tir proche du filet.
+
+	L'attaquant récupere la balle si elle est au niveau arrière de mon camps avance et tir sinon il ce dirige au point de tir au son coéquipier va faire la passe puis il tire selon les conditions de la Question 1.2 

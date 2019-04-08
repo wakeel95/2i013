@@ -18,7 +18,7 @@ class Echauffement(Strategy):
       
         if v.player.distance(v.ball) < PLAYER_RADIUS + BALL_RADIUS:
             shoot = v.playeradverse - v.player
-            return SoccerAction(shoot = shoot.normalize()*10)
+            return SoccerAction(shoot = shoot.normalize()*3)
         else :
             return a.deplacement(v.ball)
             
